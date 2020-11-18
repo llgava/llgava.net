@@ -1,8 +1,17 @@
 import React from 'react';
 
+import { GlobalStyle } from './assets/styles/GlobalStyle';
+import WelcomeMessage from './components/WelcomeMessage';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <p>Just a teste.</p>
+    <>
+      <GlobalStyle />
+
+      <WelcomeMessage />
+      <Footer />
+    </>
   );
 }
 
