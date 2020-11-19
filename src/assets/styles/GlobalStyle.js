@@ -10,15 +10,15 @@ const GlobalStyle = createGlobalStyle`
   @font-face { font-family: 'Poppins Bold'; src: url(${PoppinsBold}); }
   @font-face { font-family: 'Poppins Regular'; src: url(${PoppinsRegular}); }
 
-
-  p, h1, h2, h4, svg { color: ${Colors.light_grey}; }
+  p, h1, h2, h4, svg, li { color: ${Colors.light_grey}; }
   h1, h2, h4 { font-family: 'Poppins Bold'; }
   h1 span { color: ${Colors.green}; }
   h2 span { color: ${Colors.pink}; }
   h1 { font-size: 45px; }
-  p { font-family: 'Poppins Regular'; }
+  p, li { font-family: 'Poppins Regular'; }
   a, svg { transition: .3s ease-in-out; }
   a { text-decoration: none; }
+  li { list-style: none; }
 
   h2 {
     line-height: 34px;

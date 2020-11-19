@@ -11,7 +11,7 @@ function Footer() {
     <Container>
       <a href='https://twitter.com/llgava' target='_blank'><FaTwitter size={iSize} /></a>
       <a href='https://www.facebook.com/gava00' target='_blank'><FaFacebookF size={iSize} /></a>
-      <a href='/#' target='_blank'><FaLinkedinIn size={iSize} /></a>
+      <a href='https://www.linkedin.com/in/leonardo-luiz-gava-5b9b0a192/' target='_blank'><FaLinkedinIn size={iSize} /></a>
       <a href='https://github.com/llgava' target='_blank'><FaGithub size={iSize} /></a>
 
       <ContactContainer>
