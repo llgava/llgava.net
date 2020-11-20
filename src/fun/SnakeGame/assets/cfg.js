@@ -1,5 +1,5 @@
 const cfg = {
-  CANVAS_SIZE: [800, 800],
+  CANVAS_SIZE: [320, 320],
   SNAKE_START: [
     [8, 7],
     [8, 8]
@@ -17,3 +17,11 @@ const cfg = {
 }
 
 export { cfg };
+
+
+
+/*
+  The CANVAS_SIZE will determine the area of the game.
+  It's where the player will be able to play the game, the
+  syntax and definition of the size is: [width, height].
+*/
