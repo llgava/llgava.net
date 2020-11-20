@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 import Colors from './Colors.json';
 import Background from '../images/background.png';
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   h1, h2, h4 { font-family: 'Poppins Bold'; }
   h1 span { color: ${Colors.green}; }
   h2 span { color: ${Colors.pink}; }
-  h1 { font-size: 45px; }
+  h1 { font-size: 56px; }
   p, li { font-family: 'Poppins Regular'; }
   a, svg { transition: .3s ease-in-out; }
   a { text-decoration: none; }
@@ -44,4 +44,10 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export { GlobalStyle }
+const PageContent = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+`;
+
+export { GlobalStyle, PageContent }

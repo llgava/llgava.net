@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { GlobalStyle } from './assets/styles/GlobalStyle';
-import WelcomeMessage from './components/WelcomeMessage';
-import Footer from './components/Footer';
-import Timeline from './components/Timeline';
+import Routes from './routes';
+import Footer from './components/Global/Footer';
+import { GlobalStyle, PageContent } from './assets/styles/GlobalStyle';
 
 function App() {
   return (
     <>
       <GlobalStyle />
 
-      <WelcomeMessage />
-      <Timeline />
+      <PageContent>
+        <Routes />
+      </PageContent>
       <Footer />
     </>
   );
