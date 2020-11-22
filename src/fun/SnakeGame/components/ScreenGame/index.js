@@ -2,8 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { loadImage } from 'canvas';
 
-import { SquareX, SquareY } from '../../utils/Debug/Squares';
-
 import { MoveSnake } from '../../mechanics/MoveSnake';
 import { StartGame } from '../../mechanics/StartGame';
 import { Container } from './styles';
@@ -28,18 +26,10 @@ function ScreenGame() {
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
-
-
-
-
     /* ASSETS CONTEXTS */
     const context = canvasRef.current.getContext("2d");
     context.setTransform(cfg.SCALE, 0, 0, cfg.SCALE, 0, 0);
     context.clearRect(0, 0, cfg.CANVAS_SIZE.x, cfg.CANVAS_SIZE.y);
-
-
-    SquareX(context, cfg.SCALE, cfg.CANVAS_SIZE.x)
-    SquareY(context, cfg.SCALE, cfg.CANVAS_SIZE.y)
 
     /* SNAKE STYLE */
     loadImage(SnakeTexture).then(img => {

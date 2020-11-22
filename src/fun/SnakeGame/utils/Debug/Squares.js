@@ -1,29 +1,37 @@
 /**
- * Return a `debug` to see the size of canvas (heigth).
+ * Return a `debug` to see the size of canvas (width | X).
  */
 function SquareX(context, scale, x, y, color) {
-  const maxSize = x/scale;
-  let count = { x: 0, y: y || 0 };
+  const maxSizeX = x/scale;
+  let count = {
+    x: 0,
+    y: y || 0
+  };
 
-  for (count.x; count.x < maxSize; count.x++) {
-    console.log('O valor de count.x é: ' + count.x);
+  for (count.x; count.x < maxSizeX; count.x++) {
     context.fillStyle = color || '#FF79C6';
     context.fillRect(count.x, count.y, 1, 1);
   }
+
+  console.log(`Was found ${count.x} squares at X position.`);
 }
 
 /**
- * Return a `debug` to see the size of canvas (width).
+ * Return a `debug` to see the size of canvas (heigth | Y).
  */
 function SquareY(context, scale, y, x, color) {
-  const maxSize = y/scale;
-  let count = { x: x || 0, y: 0 };
+  const maxSizeY = y/scale;
+  let count = {
+    x: x || 0,
+    y: 0
+  };
 
-  for (count.y; count.y < maxSize; count.y++) {
-    console.log('O valor de count.x é: ' + count.y);
+  for (count.y; count.y < maxSizeY; count.y++) {
     context.fillStyle = color || '#50FA7B';
     context.fillRect(count.x, count.y, 1, 1);
   }
+
+  console.log(`Was found ${count.y} squares at Y position.`);
 }
 
 
