@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ScreenGame from '../fun/SnakeGame/components/ScreenGame';
+import ScreenGame from '../SnakeGame/components/ScreenGame';
 
 function SnakeGame() {
   return (
