@@ -10,12 +10,12 @@
 
 const cfg = {
   /* GAME AREA AND GAMEPLAY CONFIGURATION */
-  CANVAS_SIZE: [320, 320],
+  CANVAS_SIZE: { x: 306, y: 306 }, /* 9x9 SQUARES */
   SCALE: 34,
   SPEED: 100,
 
   /* SNAKE AND APPLE START COORDINATES*/
-  SNAKE_START: [ [0, 0], [0, 1] ],
+  SNAKE_START: [ [0, 1], [0, 2] ],
   APPLE_START: [8, 3],
 
   /* KEYBOARD MAP */

@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { loadImage } from 'canvas';
 
+import { SquareX, SquareY } from '../../utils/Debug/Squares';
+
 import { MoveSnake } from '../../mechanics/MoveSnake';
 import { StartGame } from '../../mechanics/StartGame';
 import { Container } from './styles';
@@ -20,15 +22,24 @@ function ScreenGame() {
   const canvasRef = useRef();
   const [snake, setSnake] = useState(cfg.SNAKE_START);
   const [apple, setApple] = useState(cfg.APPLE_START);
+  const [debug, setDebug] = useState(cfg.DEBUG_START);
   const [dir, setDir] = useState([0, -1]);
   const [speed, setSpeed] = useState(null);
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
-    /* GAME CONTEXTS */
+
+
+
+
+    /* ASSETS CONTEXTS */
     const context = canvasRef.current.getContext("2d");
     context.setTransform(cfg.SCALE, 0, 0, cfg.SCALE, 0, 0);
-    context.clearRect(0, 0, cfg.CANVAS_SIZE[0], cfg.CANVAS_SIZE[1]);
+    context.clearRect(0, 0, cfg.CANVAS_SIZE.x, cfg.CANVAS_SIZE.y);
+
+
+    SquareX(context, cfg.SCALE, cfg.CANVAS_SIZE.x)
+    SquareY(context, cfg.SCALE, cfg.CANVAS_SIZE.y)
 
     /* SNAKE STYLE */
     loadImage(SnakeTexture).then(img => {
@@ -49,8 +60,8 @@ function ScreenGame() {
     >
       <canvas
         ref={canvasRef}
-        width={`${cfg.CANVAS_SIZE[0]}px`}
-        height={`${cfg.CANVAS_SIZE[1]}px`}
+        width={`${cfg.CANVAS_SIZE.x}px`}
+        height={`${cfg.CANVAS_SIZE.y}px`}
       />
 
       {gameOver && <p>Perdeu rapaz.</p>}
