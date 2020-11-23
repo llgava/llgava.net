@@ -8,7 +8,7 @@ const XPContainer = styled.ul`
   border: 3px solid ${Colors.grey};
   padding: 15px;
   width: 172px;
-  height: 96px;
+  height: 124px;
   transition: .3s ease-in-out;
   position:relative;
   cursor: default;
@@ -22,6 +22,8 @@ const XPContainer = styled.ul`
 
   :first-child { margin-left: 0; }
   :last-child { margin-right: 0; }
+
+  h4 { margin-bottom: 10px; }
 
   svg {
     padding: 8px;
