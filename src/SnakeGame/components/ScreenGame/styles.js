@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { cfg } from '../../assets/config';
 
-export const Container = styled.div`
+const Container = styled.div`
   :focus { outline-style: none; }
 
   canvas {
+    border: 2px solid #fff;
     padding: 0;
   }
-
-  
 `;
+
+export { Container };
