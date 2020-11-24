@@ -16,6 +16,7 @@ function Footer() {
 
       <ContactContainer>
         <h4>hi at llgava dot net</h4>
+        <h4>hi@llgava.net</h4>
         <p>Did you think it would be that easy?</p>
       </ContactContainer>
     </Container>

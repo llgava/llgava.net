@@ -2,13 +2,13 @@ import React from 'react';
 import { FaPalette } from 'react-icons/fa';
 import { SiHtml5, SiJavascript, SiJava, SiTypescript } from 'react-icons/si';
 
-import { XPContainer } from './styles';
+import { Container, XPContainer } from './styles';
 
 const iSize = 25;
 
 function Experiences() {
   return (
-    <div style={{ display: "flex" }}>
+    <Container>
       <XPContainer>
         <h4>UI/UX</h4>
         <li>since I was born</li>
@@ -43,7 +43,7 @@ function Experiences() {
         <li>studying in 2020</li>
         <SiTypescript size={iSize} />
       </XPContainer>
-    </div>
+    </Container>
   );
 }
 

@@ -46,8 +46,8 @@ const GlobalStyle = createGlobalStyle`
 
 const PageContent = styled.div`
   position: absolute;
-  top: 50%;
-  transform: translateY(-70%);
+  top: 30%;
+  transform: translateY(-30%);
 `;
 
 export { GlobalStyle, PageContent }
