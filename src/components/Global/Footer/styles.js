@@ -2,15 +2,22 @@ import styled from 'styled-components';
 
 const Container = styled.footer`
   display: flex;
+  position: absolute;
   align-items: center;
   bottom: 0;
   padding: 30px 0;
-  position: absolute;
   width: 100%;
 
   a { margin: 0 5px; }
   a:first-child { margin-left: 0; }
   a:last-child { margin-right: 0; }
+
+  @media only screen and (max-width: 516px) {
+    :nth-child(n) {
+      width: 272px;
+      margin: 0 auto 30px auto;
+    }
+  }
 `;
 
 const ContactContainer = styled.div`

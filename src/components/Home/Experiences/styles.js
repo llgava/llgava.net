@@ -6,7 +6,12 @@ const Container = styled.div`
   margin-top: 60px;
   display: flex;
   flex-direction: row;
-  flex-flow : wrap
+  flex-flow : wrap;
+
+  @media only screen and (max-width: 516px) {
+    display: block;
+  }
+
 `;
 
 const XPContainer = styled.ul`
@@ -44,10 +49,17 @@ const XPContainer = styled.ul`
       :last-child { margin: 30px 15px; }
 
       @media only screen and (max-width: 720px) {
-      :nth-child(3) { margin: 30px 15px 0 0; }
-      :nth-child(4) { margin: 30px 15px 0 15px; }
-      :last-child { margin: 30px 15px 0 0; }
-    }
+        :nth-child(3) { margin: 30px 15px 0 0; }
+        :nth-child(4) { margin: 30px 15px 0 15px; }
+        :last-child { margin: 30px 15px 0 0; }
+
+        @media only screen and (max-width: 516px) {
+          :nth-child(n) {
+            width: 272px;
+            margin: 0 auto 30px auto;
+          }
+        }
+      }
     }
   }
 `;
