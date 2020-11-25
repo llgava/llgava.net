@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPalette } from 'react-icons/fa';
+import { FaPalette, FaCube } from 'react-icons/fa';
 import { SiHtml5, SiJavascript, SiJava, SiTypescript } from 'react-icons/si';
 
 import { Container, XPContainer } from './styles';
@@ -42,6 +42,13 @@ function Experiences() {
         <li>started in 2020</li>
         <li>studying in 2020</li>
         <SiTypescript size={iSize} />
+      </XPContainer>
+
+      <XPContainer>
+        <h4>Minecraft Addons</h4>
+        <li>started in 2020</li>
+        <li>studying in 2020</li>
+        <FaCube size={iSize} />
       </XPContainer>
     </Container>
   );
